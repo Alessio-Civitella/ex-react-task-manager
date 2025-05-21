@@ -9,7 +9,7 @@ export function GlobalProvider({ children }){
     useEffect(() => {
         fetch(`${VITE_API_URL}/tasks`)
         .then(res => res.json())
-        .then(data => setTasks>(data))
+        .then(data => setTasks(data))
         .catch(error => console.error(error))
     }, [])
 
